@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kellys-wordbank:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/kellys_wordbank_jar</output-path>
+    <root id="archive" name="kellys-wordbank.jar">
+      <element id="module-output" name="kellys-wordbank" />
+    </root>
+  </artifact>
+</component>
