@@ -35,7 +35,7 @@ public class MenuWindow extends Application {
         mainBox.setAlignment(Pos.CENTER);
         mainBox.setSpacing(20);
 
-        Text mainName = new Text("Kelly's Word Bank !");
+        Text mainName = new Text("Kelly's Urban Word Bank !");
         mainName.setFont(getFont(40));
 
 

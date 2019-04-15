@@ -44,7 +44,6 @@ public class Definition {
             for (int i = 59; i < tempDefinition.length() + tempDefinition.length()%60;  i += 60) {
 
                 if (i> tempDefinition.length()){
-                    formattedDefinition += tempDefinition.substring(i - 60 + 1).concat("\n");
                 }
                 else {
                     formattedDefinition += tempDefinition.substring(i - 60 + 1, i).concat("\n");

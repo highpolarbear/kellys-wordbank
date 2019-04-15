@@ -19,7 +19,7 @@ public class DefinitionFetcher {
 
         String definition= null;
 
-        String urlWord = "https://dictionary.cambridge.org/dictionary/english/".concat(word);
+        String urlWord = "https://www.urbandictionary.com/define.php?term=".concat(word);
 
         URL url = new URL(urlWord);
         URLConnection con = url.openConnection();
@@ -28,33 +28,50 @@ public class DefinitionFetcher {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
         String line = null;
+        String siteData = "";
+
+        //DataWriter dw = new DataWriter("Site_Output_text.html");
 
         // read each line and write to System.out
         while ((line = br.readLine()) != null) {
-            //System.out.println(line);
-            if (line != null  && line.contains("<meta itemprop=\"headline\"")){
+            if (line != null && line.contains("<meta content=")) {
+
 
                 //System.out.println(line);
+                siteData += line;
 
-                line = line.replaceAll("<(.*)content=", " ");
-
-                //System.out.println(line);
-                line = line.substring(line.indexOf("definition:"),line.indexOf("Learn more.\" />"));
-                line = line.replaceAll(":", "");
-                line = line.replaceAll("&quot;", "");
-                line = line.replaceAll("  ", "\n");
-                line = line.substring(("definition").length() + 1);
-
-                definition = line;
             }
         }
-        //System.out.println(definition);
 
+        siteData = siteData.substring(siteData.indexOf("property=\"og:description\" /><meta content=") + ("property=\"og:description\" /><meta content=").length(), siteData.indexOf("name=\"twitter:description\" />"));
+
+        siteData = siteData.replaceAll("&apos;","");
+        //dw.writeToFile(siteData);
+
+//        if (siteData.length() > 60){
+//            String[] def = siteData.split(" ");
+//            String siteDataNew = "";
+//
+//            System.out.println(def);
+
+//            int i = 0;
+//            while(i <  def.length - 1){
+//                siteDataNew.concat(def[i]);
+//                if (i >= 8){
+//                    siteDataNew.concat("\n");
+//                }
+//                i++;
+//            }
+//
+//            siteData = siteDataNew;
+//        }
+
+        definition = siteData;
         return definition;
     }
 
     public static void main(String[] args) {
-        DefinitionFetcher df = new DefinitionFetcher("write your word here");
+        DefinitionFetcher df = new DefinitionFetcher("banana");
         try {
             df.fetch();
         } catch (IOException e) {

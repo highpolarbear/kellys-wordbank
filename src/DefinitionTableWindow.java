@@ -14,8 +14,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-
 public class DefinitionTableWindow extends Application {
 
     Stage stage;
