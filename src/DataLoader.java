@@ -32,6 +32,34 @@ public class DataLoader extends DataAccess{
         }
     }
 
+//    public ObservableList<Definition> loadDataAbstract(){
+//
+//        DataReader dr = new DataReader(filename);
+//        String data = dr.read();
+//
+//        ObservableList<Definition> definitionData = FXCollections.observableArrayList();
+//
+//        if (data != null) {
+//
+//            String[] dataList = data.split("\n");
+//
+//            for (String currentData : dataList) {
+//                String[] thisData = currentData.split(">>>");
+//                if (thisData[1].length() > 35){
+//                    thisData[1] = thisData[1].substring(0,35).concat("...");
+//                }
+//                definitionData.add(new Definition(thisData[0], thisData[1]));
+//            }
+//
+//            return definitionData;
+//        }
+//
+//        else{
+//            return null;
+//        }
+//
+//    }
+
     public void saveData(ObservableList<Definition> data){
 
         if (data != null) {

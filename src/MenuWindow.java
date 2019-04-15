@@ -49,6 +49,7 @@ public class MenuWindow extends Application {
         create.setFont(getFont(20));
 
         find.setOnAction(e ->  launchCreateWindow());
+        create.setOnAction(e -> launchCreateDefinitionWindow());
         view.setOnAction(e -> launchDefinitionTableWindow());
         quit.setOnAction(e -> System.exit(0));
         about.setOnAction(e -> launchAboutWindow());
@@ -90,7 +91,7 @@ public class MenuWindow extends Application {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
         alert.setHeaderText("Kelly's Word Bank");
-        alert.setContentText("Version 0.0.2 - Beta" +
+        alert.setContentText("Version 1.0.0 - Beta" +
                             "\n" +
                             "\n" +
                             "Authors :  Terry Phung,  Fengqi Xu");
@@ -102,5 +103,11 @@ public class MenuWindow extends Application {
         Stage tableStage = new Stage();
         DefinitionTableWindow dtw = new DefinitionTableWindow();
         dtw.start(tableStage);
+    }
+
+    private void launchCreateDefinitionWindow(){
+        Stage createDefinitionStage = new Stage();
+        DefinitionCreateWindow dcw = new DefinitionCreateWindow();
+        dcw.start(createDefinitionStage);
     }
 }

@@ -21,7 +21,15 @@ public class FontFetcher {
         Font font;
         int size = 5;
 
-        if (name.equals("h1")){
+        if (name.equals("h0.5")){
+            size= 12;
+        }
+
+        else if (name.equals("h0.7")){
+            size= 17;
+        }
+
+        else if (name.equals("h1")){
             size= 20;
         }
 

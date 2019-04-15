@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.beans.Observable;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -6,6 +7,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -31,15 +34,15 @@ public class DefinitionTableWindow extends Application {
         definitionName.setCellValueFactory(new PropertyValueFactory<Definition, String>("definitionName"));
 
         TableColumn definitionDscp = new TableColumn("Definition");
-        definitionDscp.setCellValueFactory(new PropertyValueFactory<Definition, String>("definition"));
+        definitionDscp.setCellValueFactory(new PropertyValueFactory<Definition, String>("definitionShort"));
 
         ObservableList<Definition> data = (new DataLoader()).loadData();
 
         Button okbutton = new Button("OK");
         okbutton.setOnAction(e -> stage.close());
 
-        Button save = new Button("Save");
-        save.setOnAction(e -> saveData(data));
+//        Button save = new Button("Save");
+//        save.setOnAction(e -> saveData(data));
 
         TableView mainTable = new TableView();
         mainTable.setEditable(true);
@@ -49,8 +52,20 @@ public class DefinitionTableWindow extends Application {
 
         HBox bottombutton = new HBox();
         bottombutton.getChildren().add(okbutton);
-        bottombutton.getChildren().add(save);
+//        bottombutton.getChildren().add(save);
         bottombutton.setSpacing(10);
+
+        mainTable.setOnMouseClicked((MouseEvent event) -> {
+            if (event.getButton().equals(MouseButton.PRIMARY)) {
+                int index = mainTable.getSelectionModel().getSelectedIndex();
+                //Person person = table.getItems().get(index);z
+                Definition thisDef = (Definition) mainTable.getSelectionModel().getSelectedItem();
+                DefinitionDisplayWindow dt = new DefinitionDisplayWindow(thisDef);
+                System.out.println(index);
+
+
+            }
+        });
 
         VBox mainBox = new VBox();
         mainBox.getChildren().add(titleText);

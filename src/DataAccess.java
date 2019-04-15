@@ -27,7 +27,9 @@ public abstract class DataAccess {
         reader.readLine();
 
         while ( (line =  reader.readLine()) != null) {
-            data =  data  + line + "\n";
+            if (line != ">>>") {
+                data = data + line + "\n";
+            }
         }
         reader.close();
 
