@@ -48,7 +48,7 @@ public class DefinitionDisplayWindow extends Application {
         definitionBox.setSpacing(15);
         definitionBox.setPadding(new Insets(20,20,20,20));
 
-        String imageURL = "https://loremflickr.com/320/240/" + definitionName;
+        String imageURL = "https://loremflickr.com/320/240/" + definitionName  + "/";
         Image image = new Image(imageURL);
         ImageView imageView = new ImageView(image);
 
