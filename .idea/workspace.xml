@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95e2eadb-5363-4149-9f2c-af131e3bb196" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/kellys_wordbank_jar/kellys-wordbank.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kellys-wordbank/CreateWordWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kellys-wordbank/CreateWordWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kellys-wordbank/DefinitionDisplayWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kellys-wordbank/DefinitionDisplayWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DefinitionDisplayWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefinitionDisplayWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MenuWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuWindow.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,12 +22,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MenuWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/DefinitionTableWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            <state relative-caret-position="218">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Definition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,46 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DefinitionDisplayWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="720">
               <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FontFetcher.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DefinitionNotFoundWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ImageFetcher.java">
+        <entry file="file://$PROJECT_DIR$/src/FontFetcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#180#181#0" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CreateWordWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -85,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="277">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#109#110#0" expanded="true" />
                 <element signature="e#140#141#0" expanded="true" />
@@ -95,14 +92,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+            <state relative-caret-position="457">
+              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
               <folding>
-                <element signature="e#109#110#0" expanded="true" />
-                <element signature="e#141#142#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,11 +119,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="234">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,10 +163,14 @@
         <option value="$PROJECT_DIR$/src/CreateWordWindow.java" />
         <option value="$PROJECT_DIR$/src/DefinitionDisplayWindow.java" />
         <option value="$PROJECT_DIR$/src/DataAccessor.java" />
+        <option value="$PROJECT_DIR$/src/MenuWindow.java" />
+        <option value="$PROJECT_DIR$/src/Definition.java" />
+        <option value="$PROJECT_DIR$/src/DataReader.java" />
+        <option value="$PROJECT_DIR$/userdata.txt" />
+        <option value="$PROJECT_DIR$/src/DefinitionTableWindow.java" />
         <option value="$PROJECT_DIR$/src/DataAccess.java" />
         <option value="$PROJECT_DIR$/src/DataWriter.java" />
-        <option value="$PROJECT_DIR$/src/DataReader.java" />
-        <option value="$PROJECT_DIR$/src/MenuWindow.java" />
+        <option value="$PROJECT_DIR$/src/DataLoader.java" />
       </list>
     </option>
   </component>
@@ -199,7 +212,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555286610051" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555326566808" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -236,6 +249,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Definition Table Window" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="DefinitionTableWindow" />
+      <module name="kellys-wordbank" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Image Fetcher" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ImageFetcher" />
       <module name="kellys-wordbank" />
@@ -256,6 +276,7 @@
     <list>
       <item itemvalue="Application.Definition  Fetcher" />
       <item itemvalue="Application.Image Fetcher" />
+      <item itemvalue="Application.Definition Table Window" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
@@ -281,7 +302,7 @@
     <frame x="1" y="24" width="1680" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12026862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12026862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,7 +311,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20498301" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20498301" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,27 +380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DefinitionNotFoundWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreateWordWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -395,27 +399,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DefinitionDisplayWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/CreateWordWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MenuWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+        <state relative-caret-position="444">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DefinitionDisplayWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userdata.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userdata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="76" selection-start-column="76" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/layout/HBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DefinitionTableWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DefinitionNotFoundWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Definition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FontFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataAccess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="277">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="e#109#110#0" expanded="true" />
             <element signature="e#140#141#0" expanded="true" />
@@ -425,30 +509,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        <state relative-caret-position="457">
+          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
           <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataReader.java">
+    <entry file="file://$PROJECT_DIR$/src/DataLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FontFetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        <state relative-caret-position="493">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

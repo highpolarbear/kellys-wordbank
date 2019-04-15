@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.sql.SQLOutput;
 
 public class DataWriter extends DataAccess {
 
@@ -28,5 +29,13 @@ public class DataWriter extends DataAccess {
             }
         }
 
+    }
+
+    public void appendToFile(String newData){
+        try {
+            appendWrite(newData, filename);
+        } catch (IOException e) {
+            System.out.println("Writer Failed");
+        }
     }
 }

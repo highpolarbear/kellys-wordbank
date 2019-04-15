@@ -49,6 +49,7 @@ public class MenuWindow extends Application {
         create.setFont(getFont(20));
 
         find.setOnAction(e ->  launchCreateWindow());
+        view.setOnAction(e -> launchDefinitionTableWindow());
         quit.setOnAction(e -> System.exit(0));
         about.setOnAction(e -> launchAboutWindow());
 
@@ -95,5 +96,11 @@ public class MenuWindow extends Application {
                             "Authors :  Terry Phung,  Fengqi Xu");
 
         alert.showAndWait();
+    }
+
+    private void launchDefinitionTableWindow(){
+        Stage tableStage = new Stage();
+        DefinitionTableWindow dtw = new DefinitionTableWindow();
+        dtw.start(tableStage);
     }
 }

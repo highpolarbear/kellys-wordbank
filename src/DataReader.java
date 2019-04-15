@@ -10,7 +10,7 @@ public class DataReader extends DataAccess {
         this.filePath = filePath;
     }
 
-    public String loadData(){
+    public String read(){
         try {
             return read(filePath);
         } catch (IOException e) {

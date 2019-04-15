@@ -8,20 +8,34 @@ public abstract class DataAccess {
     }
 
     public void write(String data, String filePath) throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));
-        writer.append(data);
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, false));
+        writer.write(data);
         writer.close();
     }
+
+    public void appendWrite(String data, String filePath) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));
+        writer.write(data);
+        writer.close();
+    }
+
 
     public String read(String filePath) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         String line = null;
         String data = "";
+        reader.readLine();
+
         while ( (line =  reader.readLine()) != null) {
-            data =  data  + reader.readLine() + "\n";
+            data =  data  + line + "\n";
         }
         reader.close();
 
-        return data;
+        if (data != "") {
+            return data;
+        }
+        else{
+            return null;
+        }
     }
 }
