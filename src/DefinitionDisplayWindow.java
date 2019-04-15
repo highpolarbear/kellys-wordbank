@@ -22,7 +22,7 @@ public class DefinitionDisplayWindow extends Application {
 
         this.definitionName = word;
         this.mode = "net";
-        DefinitionFetcher df = new DefinitionFetcher(word);
+        UrbanDefinitionFetcher df = new UrbanDefinitionFetcher(word);
         try {
             this.definition = df.fetch();
             if (this.definition != null){
@@ -37,7 +37,10 @@ public class DefinitionDisplayWindow extends Application {
 
         } catch (IOException e) {
             //definition not found
-            System.out.println("System Error ! ");
+            Stage stage = new Stage();
+            DefinitionNotFoundWindow dfnf = new DefinitionNotFoundWindow();
+            dfnf.start(stage);
+            //System.out.println("System Error ! ");
         }
 
 

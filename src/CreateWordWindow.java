@@ -41,7 +41,7 @@ public class CreateWordWindow extends Application {
 
     private void fetchDefinition(String word){
 //        System.out.println(word);
-//        DefinitionFetcher df = new DefinitionFetcher(word);
+//        UrbanDefinitionFetcher df = new UrbanDefinitionFetcher(word);
 //        try {
 //            df.fetch();
 //        } catch (IOException e) {

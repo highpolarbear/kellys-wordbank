@@ -2,15 +2,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class DefinitionFetcher {
+public class UrbanDefinitionFetcher {
 
     String word;
 
-    public DefinitionFetcher(String word){
+    public UrbanDefinitionFetcher(String word){
         this.word = word;
         word = word.replaceAll("", "%20");
     }
@@ -28,7 +27,7 @@ public class DefinitionFetcher {
         BufferedReader br = new BufferedReader(new InputStreamReader(is));
 
         String line = null;
-        String siteData = "";
+        String siteData = null;
 
         //DataWriter dw = new DataWriter("Site_Output_text.html");
 
@@ -43,35 +42,23 @@ public class DefinitionFetcher {
             }
         }
 
-        siteData = siteData.substring(siteData.indexOf("property=\"og:description\" /><meta content=") + ("property=\"og:description\" /><meta content=").length(), siteData.indexOf("name=\"twitter:description\" />"));
+        if (siteData != null) {
+            siteData = siteData.substring(siteData.indexOf("property=\"og:description\" /><meta content=") +
+                    ("property=\"og:description\" /><meta content=").length(), siteData.indexOf("name=\"twitter:description\" />"));
 
-        siteData = siteData.replaceAll("&apos;","");
-        //dw.writeToFile(siteData);
+            siteData = siteData.replaceAll("&apos;", "");
+        }
 
-//        if (siteData.length() > 60){
-//            String[] def = siteData.split(" ");
-//            String siteDataNew = "";
-//
-//            System.out.println(def);
-
-//            int i = 0;
-//            while(i <  def.length - 1){
-//                siteDataNew.concat(def[i]);
-//                if (i >= 8){
-//                    siteDataNew.concat("\n");
-//                }
-//                i++;
-//            }
-//
-//            siteData = siteDataNew;
-//        }
+        if (siteData.length() < 1 || siteData.replaceAll("\\s","") == ""){
+            siteData = null;
+        }
 
         definition = siteData;
         return definition;
     }
 
     public static void main(String[] args) {
-        DefinitionFetcher df = new DefinitionFetcher("banana");
+        UrbanDefinitionFetcher df = new UrbanDefinitionFetcher("banana");
         try {
             df.fetch();
         } catch (IOException e) {

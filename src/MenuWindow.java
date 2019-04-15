@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -71,6 +72,9 @@ public class MenuWindow extends Application {
         mainBox.getChildren().addAll(mainName, buttonBox, bottomBox);
 
         Scene mainScene = new Scene(mainBox);
+
+        primaryStage.getIcons().add(new Image("file:icon.png"));
+        primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("icon.png")));
         primaryStage.setScene(mainScene);
         primaryStage.setTitle("Kelly's Word Bank");
         primaryStage.show();
@@ -91,7 +95,7 @@ public class MenuWindow extends Application {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
         alert.setHeaderText("Kelly's Word Bank");
-        alert.setContentText("Version 1.0.0 - Beta" +
+        alert.setContentText("Version U 1.0 - Beta" +
                             "\n" +
                             "\n" +
                             "Authors :  Terry Phung,  Fengqi Xu");
